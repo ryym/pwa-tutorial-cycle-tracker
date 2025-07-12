@@ -5,7 +5,7 @@
   "start_url": "/pwa-tutorial-cycle-tracker",
   "theme_color": "#eeffee",
   "background_color": "#eeffee",
-  "display": "standalone",
+  "display": "minimal-ui",
   "icons": [
     {
       "src": "icons/circle.svg",
