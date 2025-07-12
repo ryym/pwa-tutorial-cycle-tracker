@@ -27,8 +27,7 @@
   ],
   "share_target": {
     "action": "/pwa-tutorial-cycle-tracker",
-    "method": "POST",
-    "enctype": "multipart/form-data",
+    "method": "GET",
     "params": {
       "text": "text",
       "url": "url"
