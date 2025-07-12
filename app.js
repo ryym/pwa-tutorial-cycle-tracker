@@ -75,3 +75,15 @@ window.onload = () => {
   const sharedEl = document.getElementById("shared");
   sharedEl.textContent = `${text} & ${url}`;
 };
+
+async function registerServiceWorker() {
+  try {
+    const registration = await navigator.serviceWorker.register("service-worker.js");
+    console.log("service worker registration:", registration);
+  } catch (err) {
+    console.log("service worker registration failure:", err);
+  }
+}
+registerServiceWorker().catch((err) => {
+  console.error("service worker err", err);
+});
