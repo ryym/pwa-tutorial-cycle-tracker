@@ -67,3 +67,11 @@ function formatDate(dateString) {
 }
 
 renderPastPeriods();
+
+window.onload = () => {
+  const params = new URLSearchParams(window.location.search);
+  const text = params.get("text");
+  const url = params.get("url");
+  const sharedEl = document.getElementById("shared");
+  sharedEl.textContent = `${text} & ${url}`;
+};

@@ -24,5 +24,13 @@
       "src": "icons/wheel.svg",
       "sizes": "512x512"
     }
-  ]
+  ],
+  "share_target": {
+    "action": "/pwa-tutorial-cycle-tracker",
+    "method": "GET",
+    "params": {
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
