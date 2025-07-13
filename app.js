@@ -74,6 +74,10 @@ window.onload = () => {
   const url = params.get("url");
   const sharedEl = document.getElementById("shared");
   sharedEl.textContent = `${text} & ${url}`;
+
+  document.getElementById("back").addEventListener("click", () => {
+    window.history.back();
+  });
 };
 
 async function registerServiceWorker() {
